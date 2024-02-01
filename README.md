@@ -28,12 +28,13 @@ Choose from the following Java Docker images based on your server requirements:
  - Java 19: `ghcr.io/nicoyaez/images:java-19-arm64`
  - Java 20: `ghcr.io/nicoyaez/images:java-20-arm64`
  - Java 21: `ghcr.io/nicoyaez/images:java-21-arm64`
- - Java 22: Not available Expected Mar 2024
+ - Java 22: `Not available Expected Mar 2024`
  
 ## Credits
 
 These images are built upon the foundations laid by the open-source contributions of:
 
+- [Temurin™](https://adoptium.net/es/support/)
 - [mathhewpi](https://github.com/matthewpi/images)
 - [parkervcp](https://github.com/parkervcp/yolks)
 - [Pterodactyl Team](https://github.com/pterodactyl/yolks)
