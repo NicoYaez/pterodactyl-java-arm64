@@ -46,4 +46,4 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/NicoYaez/images:java-${{ matrix.tag }}-arm64
+            ghcr.io/nicoyaez/images:java-${{ matrix.tag }}-arm64
