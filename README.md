@@ -20,10 +20,10 @@ To use Java's Docker images with Pterodactyl, follow these simple steps:
 
 Choose from the following Java Docker images based on your server requirements:
 
- - Java 8: `ghcr.io/NicoYaez/images:java-8-arm64`
- - Java 11: `ghcr.io/NicoYaez/images:java-11-arm64`
- - Java 16: `ghcr.io/NicoYaez/images:java-16-arm64`
- - Java 17: `ghcr.io/NicoYaez/images:java-17-arm64`
+ - Java 8: `ghcr.io/nicoyaez/images:java-8-arm64`
+ - Java 11: `ghcr.io/nicoyaez/images:java-11-arm64`
+ - Java 16: `ghcr.io/nicoyaez/images:java-16-arm64`
+ - Java 17: `ghcr.io/nicoyaez/images:java-17-arm64`
  
 ## Credits
 
