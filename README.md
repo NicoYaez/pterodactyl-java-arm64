@@ -24,6 +24,11 @@ Choose from the following Java Docker images based on your server requirements:
  - Java 11: `ghcr.io/nicoyaez/images:java-11-arm64`
  - Java 16: `ghcr.io/nicoyaez/images:java-16-arm64`
  - Java 17: `ghcr.io/nicoyaez/images:java-17-arm64`
+ - Java 18: `ghcr.io/nicoyaez/images:java-18-arm64`
+ - Java 19: `ghcr.io/nicoyaez/images:java-19-arm64`
+ - Java 20: `ghcr.io/nicoyaez/images:java-20-arm64`
+ - Java 21: `ghcr.io/nicoyaez/images:java-21-arm64`
+ - Java 22: Not available Expected Mar 2024
  
 ## Credits
 
