@@ -1,24 +1,26 @@
-# Java Docker Images for ARM64 and Pterodactyl
+# Imágenes Java Docker para ARM64 y Pterodactyl
 
-## Overview
+## Visión general
 
-Welcome to Java's Docker images tailored for ARM64 machines running Pterodactyl servers for Minecraft. These images are designed to streamline the deployment process and enhance the server hosting experience on ARM64 architecture.
+Bienvenido a las imágenes Docker de Java adaptadas para máquinas ARM64 que ejecutan servidores Pterodactyl para Minecraft. Estas imágenes están diseñadas para agilizar el proceso de despliegue y mejorar la experiencia de alojamiento de servidores en arquitectura ARM64.
 
-## Usage
+## Uso
 
-To use Java's Docker images with Pterodactyl, follow these simple steps:
+Para utilizar las imágenes Docker de Java con Pterodactyl, siga estos sencillos pasos:
 
-1. Log in to your Pterodactyl panel.
+1. Inicia sesión en tu panel de Pterodactyl.
 
-2. Navigate to the server configuration page.
+2. Navega hasta la página de configuración del servidor.
 
-3. In the Docker image configuration field, replace the existing image link with one of the provided links corresponding to the desired Java image.
+3. En el campo de configuración de imagen Docker, sustituya el enlace de imagen existente por uno de los enlaces proporcionados correspondiente a la imagen Java deseada.
 
-4. Save the changes and restart your Pterodactyl server.
+4. 4. Guarde los cambios y reinicie su servidor Pterodactyl.
 
-## Available Images
+Traducción realizada con la versión gratuita del traductor DeepL.com
 
-Choose from the following Java Docker images based on your server requirements:
+## Imágenes disponibles
+
+Elija entre las siguientes imágenes Java Docker en función de los requisitos de su servidor:
 
  - Java 8: `ghcr.io/nicoyaez/images:java-8-arm64`
  - Java 11: `ghcr.io/nicoyaez/images:java-11-arm64`
@@ -28,15 +30,14 @@ Choose from the following Java Docker images based on your server requirements:
  - Java 19: `ghcr.io/nicoyaez/images:java-19-arm64`
  - Java 20: `ghcr.io/nicoyaez/images:java-20-arm64`
  - Java 21: `ghcr.io/nicoyaez/images:java-21-arm64`
- - Java 22: `Not available Expected Mar 2024`
+ - Java 22: `ghcr.io/nicoyaez/images:java-22-arm64`
+ - Java 22: `No disponible Previsto Sep 2024`
  
-## Credits
+## Créditos
 
-These images are built upon the foundations laid by the open-source contributions of:
+Estas imágenes se construyen sobre los cimientos establecidos por las contribuciones de código abierto de:
 
 - [Temurin™](https://adoptium.net/es/support/)
 - [mathhewpi](https://github.com/matthewpi/images)
 - [parkervcp](https://github.com/parkervcp/yolks)
 - [Pterodactyl Team](https://github.com/pterodactyl/yolks)
-
-Feel free to explore, modify, and contribute to the project. Happy hosting!
