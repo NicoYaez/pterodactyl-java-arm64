@@ -14,7 +14,7 @@ Para utilizar las imágenes Docker de Java con Pterodactyl, siga estos sencillos
 
 3. En el campo de configuración de imagen Docker, sustituya el enlace de imagen existente por uno de los enlaces proporcionados correspondiente a la imagen Java deseada.
 
-4. 4. Guarde los cambios y reinicie su servidor Pterodactyl.
+4. Guarde los cambios y reinicie su servidor Pterodactyl.
 
 Traducción realizada con la versión gratuita del traductor DeepL.com
 
