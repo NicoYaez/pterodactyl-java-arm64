@@ -29,7 +29,7 @@ Elija entre las siguientes imágenes Java Docker en función de los requisitos d
  - Java 20: `ghcr.io/nicoyaez/images:java-20-arm64`
  - Java 21: `ghcr.io/nicoyaez/images:java-21-arm64`
  - Java 22: `ghcr.io/nicoyaez/images:java-22-arm64`
- - Java 22: `No disponible Previsto Sep 2024`
+ - Java 23: `No disponible Previsto Sep 2024`
  
 ## Créditos
 
