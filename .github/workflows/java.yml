@@ -1,21 +1,32 @@
 name: build java
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 17 1,15 * *" # bi-weekly on 1st and 15th calendar day at 17:00
   push:
+    branches:
+      - main
     paths:
       - java/**
+
+permissions:
+  actions: read
+  packages: write
+
+concurrency:
+  group: java-${{ github.ref }}-1
+  cancel-in-progress: true
+
 jobs:
   push:
-    name: "Push"
+    name: "java_${{ matrix.tag }}"
     runs-on: ubuntu-latest
-    strategy: 
+    strategy:
       fail-fast: false
       matrix:
-        tag: 
+        tag:
           - 8
-          - 11
           - 16
           - 17
           - 18
@@ -24,30 +35,29 @@ jobs:
           - 21
           - 22
     steps:
-      - name: Code Checkout
-        uses: actions/checkout@v2
+      - name: Git checkout for Github repository workspace
+        uses: actions/checkout@v4
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+      - name: Setup QEMU for multiarch builds
+        uses: docker/setup-qemu-action@v3
 
-      - name: Install buildx
-        uses: docker/setup-buildx-action@v2
+      - name: Setup Docker buildx
+        uses: docker/setup-buildx-action@v3
         with:
           buildkitd-flags: --debug
 
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v1
+      - name: Login to registry
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and Push
-        uses: docker/build-push-action@v2
+      - name: Build and push image
+        uses: docker/build-push-action@v6
         with:
           context: ./java
+          platforms: linux/amd64, linux/arm64
           file: ./java/${{ matrix.tag }}/Dockerfile
-          platforms: linux/arm64
           push: true
-          tags: |
-            ghcr.io/nicoyaez/images:java-${{ matrix.tag }}-arm64
+          tags: ghcr.io/nicoyaez/images:java-${{ matrix.tag }}-arm64
