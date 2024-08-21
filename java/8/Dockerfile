@@ -1,4 +1,4 @@
-FROM        eclipse-temurin:8-jammy
+FROM        eclipse-temurin:8u312-b07-jdk-focal
 
 LABEL       author="NicoYaez" maintainer="nicoyaez1799@gmail.com"
 LABEL       org.opencontainers.image.source="https://github.com/NicoYaez/pterodactyl-java-arm64"
